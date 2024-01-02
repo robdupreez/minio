@@ -19,7 +19,7 @@ operator:
   #    - name: CLUSTER_DOMAIN
   #      value: "cluster.domain"
   #    - name: WATCHED_NAMESPACE
-  #      value: ""
+  #      value: "nginx-test2"
   #    - name: MINIO_OPERATOR_RUNTIME
   #      value: "OpenShift" 
   #
@@ -27,6 +27,8 @@ operator:
   env:
     - name: OPERATOR_STS_ENABLED
       value: "on"
+    - name: WATCHED_NAMESPACE
+      value: "nginx-test2"
   ###
   # Specify the Operator container image to use for the deployment.
   # ``image.tag`` 
